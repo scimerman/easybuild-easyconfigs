@@ -13,7 +13,7 @@ source_urls = ['https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-%(version_ma
 sources = [SOURCELOWER_TAR_GZ]
 patches = ['configure_libtool.patch']
 checksums = [
-    '5f9a3ee85db4ea1d3b1fa9159352aebc2af72732fc2f58c96a3f0768dba0e9aa',  # source code
+    '1dbefeeef7f591897c632b2b090db96bb8d35ad035beaa36bc39cb2bc67e0639',  # source code
     '44e04cace87c54f75e8eb5b710679104f6703d88d10d6f3e5130b8cd90c69aa1',  # configure_libtool.patch
 ]
 
