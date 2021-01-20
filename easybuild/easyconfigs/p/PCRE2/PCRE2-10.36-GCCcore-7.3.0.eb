@@ -1,0 +1,38 @@
+easyblock = 'ConfigureMake'
+
+name = 'PCRE2'
+version = '10.36'
+
+homepage = 'http://www.pcre.org/'
+description = """
+ The PCRE library is a set of functions that implement regular expression pattern matching using the same syntax
+ and semantics as Perl 5.
+"""
+
+toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
+toolchainopts = {'pic': True}
+
+source_urls = ['http://download.sourceforge.net/pcre']
+sources = [SOURCELOWER_TAR_GZ]
+checksums = ['b95ddb9414f91a967a887d69617059fb672b914f56fa3d613812c1ee8e8a1a37']
+
+builddependencies = [
+    ('binutils', '2.30'),
+]
+
+dependencies = [
+    ('bzip2', '1.0.8'),
+    ('zlib', '1.2.11')
+]
+
+configopts = '--with-pic --enable-shared --enable-jit'
+configopts += ' --enable-pcre2-16 --enable-pcre2-32 --enable-unicode'
+configopts += ' --enable-pcre2grep-libz --enable-pcre2grep-libbz2'
+
+sanity_check_paths = {
+    'files': ['bin/pcre2-config', 'bin/pcre2grep', 'bin/pcre2test', 
+              'lib/libpcre2-8.a', 'lib/libpcre2-16.a', 'lib/libpcre2-32.a'],
+    'dirs': [],
+}
+
+moduleclass = 'devel'

@@ -1,0 +1,38 @@
+easyblock = 'ConfigureMake'
+
+name = 'SQLite'
+version = '3.34.0'
+
+homepage = 'http://www.sqlite.org/'
+description = 'SQLite: SQL Database Engine in a C Library'
+
+toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
+toolchainopts = {'pic': True}
+
+source_urls = ['http://www.sqlite.org/2020/']
+version_str = '%%(version_major)s%s00' % ''.join('%02d' % int(x) for x in version.split('.')[1:])
+sources = ['sqlite-autoconf-%s.tar.gz' % version_str]
+checksums = ['bf6db7fae37d51754737747aaaf413b4d6b3b5fbacd52bdb2d0d6e5b2edd9aee']
+
+builddependencies = [
+    ('binutils', '2.30'),
+]
+
+dependencies = [
+    ('libreadline', '8.0'),
+    ('Tcl', '8.6.11'),
+]
+
+#
+# Enable additional APIs that provide access to meta-data about tables and queries.
+# Required for GDAL when used as a dependency for QGIS.
+#
+buildopts = 'CC="$CC" CFLAGS="$CFLAGS -DSQLITE_ENABLE_COLUMN_METADATA"'
+
+sanity_check_paths = {
+    'files': ['bin/sqlite3', 'include/sqlite3ext.h', 'include/sqlite3.h',
+              'lib/libsqlite3.a', 'lib/libsqlite3.%s' % SHLIB_EXT],
+    'dirs': ['lib/pkgconfig'],
+}
+
+moduleclass = 'devel'
