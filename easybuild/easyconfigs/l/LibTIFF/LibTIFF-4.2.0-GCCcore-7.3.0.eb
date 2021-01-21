@@ -14,7 +14,7 @@ source_urls = [
     'ftp://ftp.remotesensing.org/pub/libtiff/',
 ]
 sources = ['tiff-%(version)s.tar.gz']
-checksums = ['2c52d11ccaf767457db0c46795d9c7d1a8d8f76f68b0b800a3dfe45786b996e4']
+checksums = ['eb0484e568ead8fa23b513e9b0041df7e327f4ee2d22db5a533929dfc19633cb']
 
 builddependencies = [('binutils', '2.30')]
 
