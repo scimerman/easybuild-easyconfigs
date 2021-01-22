@@ -27,11 +27,13 @@ dependencies = [
     # it's nice to have an up to date openssl for security reasons.
     # Default OpenSSL 1.0.2k on Centos 7.x is too old resulting in compilation error,
     # so we need to deploy a newer version using EasyBuild.
-    ('OpenSSL', '1.1.0h'),
+    ('OpenSSL', '1.1.1i'),
 ]
 
 #osdependencies = [
 #    OS_PKG_OPENSSL_DEV,
 #]
+
+#use_openssl = False
 
 moduleclass = 'devel'
