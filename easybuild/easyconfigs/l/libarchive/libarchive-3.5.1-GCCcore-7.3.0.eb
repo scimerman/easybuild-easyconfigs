@@ -23,6 +23,7 @@ dependencies = [
     ('zlib', '1.2.11'),
     ('bzip2', '1.0.8'),
     ('XZ', '5.2.5'),
+    ('OpenSSL', '1.1.1i'),
 ]
 
 sanity_check_paths = {
