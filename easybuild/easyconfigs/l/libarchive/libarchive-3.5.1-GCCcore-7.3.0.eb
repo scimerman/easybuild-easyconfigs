@@ -13,7 +13,7 @@ toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
 
 source_urls = ['https://www.libarchive.org/downloads/']
 sources = [SOURCE_TAR_GZ]
-checksums = ['ee1e749213c108cb60d53147f18c31a73d6717d7e3d2481c157e1b34c881ea39']
+checksums = ['9015d109ec00bb9ae1a384b172bf2fc1dff41e2c66e5a9eeddf933af9db37f5a']
 
 builddependencies = [
     ('binutils', '2.30'),
