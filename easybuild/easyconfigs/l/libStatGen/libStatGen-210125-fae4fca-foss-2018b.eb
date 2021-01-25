@@ -1,6 +1,6 @@
 easyblock = 'MakeCp'
 name = 'libStatGen'
-version = 'fae4fca874b3b78bf9b61c0eae080c15edd976a4'
+version = '210125-fae4fca'
 
 homepage = 'https://github.com/statgen/libStatGen'
 description = """Classes for creating statistical genetic programs."""
@@ -8,7 +8,7 @@ description = """Classes for creating statistical genetic programs."""
 toolchain = {'name': 'foss', 'version': '2018b'}
 
 source_urls = ['https://github.com/statgen/%(name)s/archive/']
-sources = [('%s.tar.gz' % (version))]
+sources = ['fae4fca874b3b78bf9b61c0eae080c15edd976a4.tar.gz']
 checksums = ['8b49088139d70cd67c94bda68a94621452ef925bb7e266576b830cc01d9d8c2a']
 
 dependencies = [
