@@ -11,7 +11,7 @@ toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
 toolchainopts = {'pic': True}
 
 source_urls = ['https://artifacts.unidata.ucar.edu/repository/downloads-udunits/']
-sources = ['%(namelower)-%(version)s.tar.gz']
+sources = [SOURCELOWER_TAR_GZ]
 checksums = ['590baec83161a3fd62c00efa66f6113cec8a7c461e3f61a5182167e0cc5d579e']
 
 builddependencies = [
@@ -19,7 +19,7 @@ builddependencies = [
     ('Autotools', '20180311'),
 ]
 
-dependencies = [('expat', '2.2.7')]
+dependencies = [('expat', '2.2.10')]
 
 #
 # Unfortunately there is no proper configure option to disable building info pages 
