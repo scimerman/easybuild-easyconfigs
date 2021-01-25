@@ -20,7 +20,7 @@ checksums = [
 
 builddependencies = [
     ('CMake', '3.12.1','',('GCCcore','7.3.0')),
-    ('libStatGen', '210125-fae4fca', '', ('foss','2018b'))
+    ('libStatGen', '20210125-fae4fca', '', ('foss','2018b'))
 ]
 
 prebuildopts = 'cmake ./ && '
