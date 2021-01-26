@@ -37,9 +37,9 @@ dependencies = [
     ('libxml2', '2.9.10'),             # for XML parsing.
     ('libpng', '1.6.37'),             # For plotting in R.
     ('libjpeg-turbo', '2.0.6'),       # For plotting in R.
-    ('LibTIFF', '4.2.0'),            # For plotting in R.
-    ('cairo', '1.16.0'),              # For plotting in R.
-    ('Pango', '1.43.0'),              # For plotting in R.
+    ('LibTIFF', '4.2.0'),             # For plotting in R.
+    ('cairo', '1.16.0', '-2'),        # For plotting in R.
+    ('Pango', '1.48.0'),              # For plotting in R.
     #
     # Disabled TK, because the -no-X11 option does not work and still requires X11,
     # which does not exist on headless compute nodes.
