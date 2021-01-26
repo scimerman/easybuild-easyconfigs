@@ -24,6 +24,12 @@ builddependencies = [
     ('binutils', '2.30'),
 ]
 
+#configopts = [
+#    '--with-intl=none',           # Fully disable ICU to avoid issues with the embedded icu-small library
+#    '--shared --with-intl=none',  # Build libnode.so in a second run
+#]
+configopts = '--shared'
+
 #
 # Link libv8 libs to libnode.
 #
