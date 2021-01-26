@@ -8,7 +8,7 @@ description = """HarfBuzz is an OpenType text shaping engine."""
 
 toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
 
-source_urls = ['http://www.freedesktop.org/software/harfbuzz/release/']
+source_urls = ['https://github.com/harfbuzz/harfbuzz/releases/download/%(version)s']
 sources = [SOURCELOWER_TAR_XZ]
 checksums = ['6ad11d653347bd25d8317589df4e431a2de372c0cf9be3543368e07ec23bb8e7']
 
