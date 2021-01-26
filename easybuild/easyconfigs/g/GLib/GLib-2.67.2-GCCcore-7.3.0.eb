@@ -17,7 +17,7 @@ builddependencies = [
     ('binutils', '2.30'),
     ('Meson', '0.56.2'),
     ('Ninja', '1.10.2'),
-    ('Python', '3.7.4', '-bare'),
+    ('Python', '3.9.1', '-bare'),
     ('pkg-config', '0.29.2'),
 ]
 dependencies = [

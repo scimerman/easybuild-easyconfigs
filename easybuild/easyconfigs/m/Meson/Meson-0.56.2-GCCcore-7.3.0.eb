@@ -17,7 +17,7 @@ builddependencies = [
 ]
 
 dependencies = [
-    ('Python', '3.7.4', '-bare'),
+    ('Python', '3.9.1', '-bare'),
     ('Ninja', '1.10.2'),
 ]
 
