@@ -2,7 +2,7 @@ easyblock = 'ConfigureMake'
 
 name = 'nodejs'
 version = '14.15.4'
-local_libversion = '777'
+local_libversion = '83'
 
 homepage = 'http://nodejs.org'
 
