@@ -11,13 +11,13 @@ toolchainopts = {'pic': True}
 
 source_urls = [FTPGNOME_SOURCE]
 sources = [SOURCELOWER_TAR_XZ]
-checksums = ['']
+checksums = ['b41d42d6c572e1e420ffc38a077e0157e0b53b5a94c9647a3dc3701043c3b69b']
 
 builddependencies = [
     ('binutils', '2.30'),
-    ?('Meson', '0.51.1'),
-    ?('Ninja', '1.9.0'),
-    ?('Python', '3.7.4', '-bare'),
+    ('Meson', '0.51.1'),
+    ('Ninja', '1.9.0'),
+    ('Python', '3.7.4', '-bare'),
     ('pkg-config', '0.29.2'),
 ]
 dependencies = [
