@@ -19,7 +19,7 @@ checksums = ['6eaf422f26a81854a230b80fd18aaef7e8d94d661485bd2e97e695b9dce7bf7f']
 dependencies = [
     ('zlib', '1.2.11'),
     ('libpng', '1.6.37'),
-    ('freetype', '2.10.1'),
+    ('freetype', '2.10.4'),
     ('libjpeg-turbo', '2.0.6'),
     ('expat', '2.2.10'),
     ('GLib', '2.61.1'),
