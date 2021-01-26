@@ -1,0 +1,32 @@
+easyblock = 'MakeCp'
+name = 'libStatGen'
+version = '20210125-fae4fca'
+
+homepage = 'https://github.com/statgen/libStatGen'
+description = """Classes for creating statistical genetic programs."""
+
+toolchain = {'name': 'foss', 'version': '2018b'}
+
+source_urls = ['https://github.com/statgen/%(name)s/archive/']
+sources = ['fae4fca874b3b78bf9b61c0eae080c15edd976a4.tar.gz']
+checksums = ['8b49088139d70cd67c94bda68a94621452ef925bb7e266576b830cc01d9d8c2a']
+
+dependencies = [
+    ('zlib', '1.2.11', '',('GCCcore','7.3.0')),
+]
+
+#start_dir = 'compile'
+buildopts = 'all'
+
+files_to_copy = [
+    (['libStatGen.a', 'libStatGen_debug.a', 'libStatGen_profile.a'], 'lib/'),
+    'include',
+    'copyrights',
+]
+
+sanity_check_paths = {
+    'files': ['lib/libStatGen.a'],
+    'dirs': ['copyrights', 'lib', 'include']
+}
+
+moduleclass = 'lib'
