@@ -14,6 +14,7 @@ checksums = ['6211f271ce4cd44a7318190d36712e9cea384a933d3e3570004edeb210a056d3']
 
 builddependencies = [
     ('binutils', '2.30'),
+    ('GObject-Introspection', '1.60.1'),
 ]
 
 dependencies = [
