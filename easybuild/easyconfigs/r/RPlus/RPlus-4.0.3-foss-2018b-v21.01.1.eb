@@ -19,9 +19,9 @@ toolchain = {'name': 'foss', 'version': '2018b'}
 # This Python should not be too new either: it's dependencies like for example on ncursus should be compatible with R's dependencies.
 # The alternative is to replace the https URLs with http URLs in the generated EasyConfig.
 #
-#builddependencies = [
-#    ('Python', '3.7.4')
-#]
+builddependencies = [
+    ('Python', '3.9.1', '-bare')
+]
 
 dependencies = [
     ('R', '%(version)s', '-bare'),
