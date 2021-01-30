@@ -3775,6 +3775,7 @@ exts_list = [
         'source_urls': local_cran_options['source_urls'],
         'checksums': ['a0f83cbf21563e81dbd1a1bd8379623ed0c9c4df4e094c75013abfd7a5271545'],
         'installopts': '--configure-args="--with-hdf5=$EBROOTHDF5/bin/h5pcc"',
+        'preinstallopts': 'unset LIBS && ',
     }),
     ('heatmap3', '1.1.9', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
