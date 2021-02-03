@@ -1,0 +1,26 @@
+name = 'Doxygen'
+version = '1.8.20'
+
+homepage = 'http://www.doxygen.org'
+
+description = """
+ Doxygen is a documentation system for C++, C, Java, Objective-C, Python,
+ IDL (Corba and Microsoft flavors), Fortran, VHDL, PHP, C#, and to some
+ extent D.
+"""
+
+toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
+
+source_urls = ['https://github.com/doxygen/doxygen/archive/Release_1_8_20.tar.gz']
+sources = ['Release_%s.tar.gz' % version.replace('.', '_')]
+checksums = ['3dbdf8814d6e68233d5149239cb1f0b40b4e7b32eef2fd53de8828fedd7aca15']
+
+builddependencies = [
+    ('binutils', '2.30'),
+    ('Bison', '3.0.4'),
+    ('CMake', '3.19.3'),
+    ('flex', '2.6.4'),
+    ('pkg-config', '0.29.2'),
+]
+
+moduleclass = 'devel'
