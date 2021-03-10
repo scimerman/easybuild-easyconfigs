@@ -1,0 +1,35 @@
+easyblock = 'Tarball'
+
+name = 'vip'
+version = 'v1.3.0'
+
+homepage = 'https://github.com/molgenis/vip/'
+description = """Variant Interpretation Pipeline"""
+
+toolchain = {'name': 'foss', 'version': '2018b'}
+
+source_urls = [('http://github.com/molgenis/%s/archive/' % (name))]
+sources = [('%s.tar.gz' % (version))]
+checksums = ['2ebec22176a6ea7d878a5730b923e545d055a034d8641727d0ca74e4d7dd7a65']
+
+# Dependencies are loaded by pipeline on demand due to dependency conflicts
+
+sanity_check_paths = {
+    'files': ['pipeline.sh'],
+    'dirs': []
+}
+
+moduleclass = 'bio'
+
+modloadmsg = """
+===============================================================================
+Show usage:
+       bash ${EBROOTVIP}/pipeline.sh
+
+Show usage for individual pipeline modules:
+       bash ${EBROOTVIP}/pipeline_preprocess.sh
+       bash ${EBROOTVIP}/pipeline_annotate.sh
+       bash ${EBROOTVIP}/pipeline_filter.sh
+       bash ${EBROOTVIP}/pipeline_report.sh
+===============================================================================
+"""
