@@ -18,9 +18,6 @@ toolchain = {'name': 'dummy', 'version': 'dummy'}
 # tarball out of install script and pipe to tar. %s in the extraction
 # command will be replaced by the source filename.
 #
-# WARNING: Typical IBM bullshit: download requires stupid, free "IBM account", 
-# so you will have to download the installer script manually.
-#
 sources = [{
     'filename': 'ibm-%(namelower)s-%(version)s%(versionsuffix)s-linux-64-release.sh',
     'extract_cmd': "sed '1,/^__ARCHIVE_FOLLOWS__$/d' %s | tar -xzpo --strip-components 1 -f -",
