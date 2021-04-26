@@ -1,12 +1,11 @@
-easyblock = 'PackedBinary'
-
 name = 'ngs-utils'
 version = '21.03.1'
 
 homepage = 'https://github.com/molgenis/ngs-utils'
 description = """Collection of notes and scripts related to NGS """
 
-toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
+toolchain = {'name': 'dummy', 'version': 'dummy'}
+easyblock = 'PackedBinary'
 
 #
 # Example URL: https://github.com/molgenis/ngs-utils/archive/15.12.2.tar.gz
@@ -14,10 +13,11 @@ toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
 source_urls = [('http://github.com/molgenis/ngs-utils/archive/%s/' % (version))]
 sources = [('%s.tar.gz' % (version))]
 
-checksums = ['177a71396b7f479fa3def5a65b286e454d410341512ac0e6d24588478c502c78']
+checksums = ['f4f85e25c77c4e0c12c9544ede05dd741e2b0f54eae56be4554810bc88544266']
 
 dependencies = [ 
-    ('PerlPlus', '5.22.0', '-v17.08.1'),
+    ('Text-CSV', '1.33', '', ('foss', '2015b')),
+    ('Log-Log4perl', '1.46', '', ('foss', '2015b')),
 ]
 
 postinstallcmds = [
