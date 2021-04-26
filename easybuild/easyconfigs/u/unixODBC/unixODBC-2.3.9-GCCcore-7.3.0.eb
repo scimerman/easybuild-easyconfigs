@@ -1,0 +1,21 @@
+easyblock = 'ConfigureMake'
+
+name = 'unixODBC'
+version = '2.3.9'
+
+homepage = "https://www.unixodbc.org"
+description = """unixODBC provides a uniform interface between
+application and database driver"""
+
+toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
+
+source_urls = ['http://www.unixodbc.org/']
+sources = [SOURCE_TAR_GZ]
+checksums = ['52833eac3d681c8b0c9a5a65f2ebd745b3a964f208fc748f977e44015a31b207']
+
+builddependencies = [
+    ('binutils', '2.30'),
+]
+
+moduleclass = 'data'
+

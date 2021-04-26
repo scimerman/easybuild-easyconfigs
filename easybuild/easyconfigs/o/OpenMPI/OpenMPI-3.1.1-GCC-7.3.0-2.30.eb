@@ -13,14 +13,19 @@ sources = [SOURCELOWER_TAR_GZ]
 checksums = ['846bb7ed2aa0c96fc0594423e7b21904ee4f160dcfd62b8a0d1274256fbf25ce']
 
 # needed for --with-verbs
-osdependencies = [('libibverbs-dev', 'libibverbs-devel', 'rdma-core-devel')]
+osdependencies = [('libibverbs-dev', 'libibverbs-devel', 'rdma-core-devel', 'mlnx-ofa_kernel-devel')]
 
 dependencies = [
     ('zlib', '1.2.11'),
     ('hwloc', '1.11.10')
 ]
 
-configopts = '--enable-shared --with-verbs '
+#
+# This version does not compile with the 'mlnx-ofa_kernel-devel' RPM that replaced 'rdma-core-devel' on CentOS/RHEL.
+# Dropped infiniband support for now.
+#
+#configopts = '--enable-shared --with-verbs '
+configopts = '--enable-shared '
 configopts += '--enable-mpirun-prefix-by-default '  # suppress failure modes in relation to mpirun path
 configopts += '--with-hwloc=$EBROOTHWLOC '  # hwloc support
 

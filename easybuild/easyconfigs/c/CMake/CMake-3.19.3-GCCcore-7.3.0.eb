@@ -1,0 +1,60 @@
+name = 'CMake'
+version = '3.19.3'
+
+homepage = 'http://www.cmake.org'
+
+description = """
+ CMake, the cross-platform, open-source build system.  CMake is a family of
+ tools designed to build, test and package software.
+"""
+
+toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
+
+source_urls = ['http://www.cmake.org/files/v%(version_major_minor)s']
+sources = [SOURCELOWER_TAR_GZ]
+checksums = ['3faca7c131494a1e34d66e9f8972ff5369e48d419ea8ceaa3dc15b4c11367732']
+
+builddependencies = [
+    ('binutils', '2.30'),
+]
+
+dependencies = [
+    ('ncurses', '6.2'),
+    ('zlib', '1.2.11'),
+    ('bzip2', '1.0.8'),
+    ('cURL', '7.74.0'),
+    ('expat', '2.2.10'),
+    #
+    # Default OpenSSL 1.0.2k on Centos 7.x is too old resulting in compilation error,
+    # so we need to deploy a newer version >= 1.1.0 using EasyBuild.
+    #
+    ('OpenSSL', '1.1.1i'),
+    #
+    # Newer libarchive linked to the same newer OpenSSL is required too.
+    # Otherwise linker will complain about missing symbols from OpenSSL libs:
+    # 1830  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_release: error: undefined reference to 'EVP_CIPHER_CTX_free'
+    # 1831  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_init: error: undefined reference to 'EVP_CIPHER_CTX_new'
+    # 1832  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_init: error: undefined reference to 'EVP_aes_256_ecb'
+    # 1833  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_init: error: undefined reference to 'EVP_CIPHER_CTX_reset'
+    # 1834  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_init: error: undefined reference to 'EVP_CIPHER_CTX_free'
+    # 1835  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_init: error: undefined reference to 'EVP_aes_128_ecb'
+    # 1836  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_init: error: undefined reference to 'EVP_aes_192_ecb'
+    # 1837  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_update: error: undefined reference to 'EVP_EncryptInit_ex'
+    # 1838  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_update: error: undefined reference to 'EVP_EncryptUpdate'
+    # 1839  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_update: error: undefined reference to 'EVP_EncryptInit_ex'
+    # 1840  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_cryptor.c.o):archive_cryptor.c:function aes_ctr_update: error: undefined reference to 'EVP_EncryptUpdate'
+    # 1841  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_hmac.c.o):archive_hmac.c:function __hmac_sha1_cleanup: error: undefined reference to 'HMAC_CTX_free'
+    # 1842  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_hmac.c.o):archive_hmac.c:function __hmac_sha1_final: error: undefined reference to 'HMAC_Final'
+    # 1843  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_hmac.c.o):archive_hmac.c:function __hmac_sha1_init: error: undefined reference to 'HMAC_CTX_new'
+    # 1844  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_hmac.c.o):archive_hmac.c:function __hmac_sha1_init: error: undefined reference to 'EVP_sha1'
+    # 1845  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_hmac.c.o):archive_hmac.c:function __hmac_sha1_init: error: undefined reference to 'HMAC_Init_ex'
+    # 1846  ../../Utilities/cmlibarchive/libarchive/libcmlibarchive.a(archive_hmac.c.o):archive_hmac.c:function __hmac_sha1_update: error: undefined reference to 'HMAC_Update'
+    #
+    ('libarchive', '3.5.1'),
+]
+
+#osdependencies = [
+#    OS_PKG_OPENSSL_DEV,
+#]
+
+moduleclass = 'devel'
