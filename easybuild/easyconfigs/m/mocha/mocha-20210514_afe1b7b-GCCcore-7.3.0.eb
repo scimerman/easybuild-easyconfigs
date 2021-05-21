@@ -2,7 +2,7 @@ easyblock = 'ConfigureMake'
 
 name = 'mocha'
 _local_bcftools_version = '1.11'
-_local_mocha_hash = '9cf06e9ded65e63b3411d9245c6e33ee94d16694'
+_local_mocha_hash = 'afe1b7bbe997b75ff5e4923fefa0be99d64409bd'
 version = '20210514_' + _local_mocha_hash[0:7]
 
 homepage = 'https://github.com/freeseek/mocha'
@@ -24,7 +24,7 @@ sources = [{
 }]
 checksums = [
     '3ceee47456ec481f34fa6c34beb6fe892b5b365933191132721fdf126e45a064', #  bcftools-1.11.tar.bz2
-    'db83ba39e594acf87b49ba1538103fc5d6b33949570eb72a6303ee85d4ed7565', #  mocha-%(_local_mocha_hash)s.tar.gz
+    'afe634ba98e48ddf3b2ecfec5a78f975e432e8e0f5a2fa9396a2fe23f63c3b61', #  mocha-%(_local_mocha_hash)s.tar.gz
 ]
 
 builddependencies = [
