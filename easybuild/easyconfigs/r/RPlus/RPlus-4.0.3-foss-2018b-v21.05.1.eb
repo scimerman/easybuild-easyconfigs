@@ -82,17 +82,17 @@ local_bioconductor_options = {
 exts_list = [
     ('affxparser', '1.62.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['9708bbd894c1c3a878d93d26bb6883eb35fbc3fa0f18975aec8fbf3d358f048e'],
     }),
     ('zlibbioc', '1.36.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['afc369ac424b010153201b4da910a7573e283b65ac5bd852a8db7ea0756b6654'],
     }),
     ('affyio', '1.60.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['70206db67322b998d86c914372a4a8aae7ca5e7349150c658fafbf9d7bfeb693'],
     }),
     ('GlobalOptions', '0.1.2', {
@@ -117,17 +117,17 @@ exts_list = [
     }),
     ('BiocGenerics', '0.36.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['384197246060ff43032ccd3666b5f4419dbdd0cf0bc93f76b2c089ffac7a37f9'],
     }),
     ('S4Vectors', '0.28.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['30839d2f118c91cf3638e15dfe5ef154fde90d79d6c0afe83b35e6ee34250e3a'],
     }),
     ('IRanges', '2.24.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['a2704c1600ff0d15e587ac6389f440e6f5cbc99c40de02ce7fa36d819421bd06'],
     }),
     ('bitops', '1.0-6', {
@@ -142,22 +142,22 @@ exts_list = [
     }),
     ('GenomeInfoDbData', '1.2.4', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['9a9ecee1d03b7a859bd00640c952862781398a1f06bd63667c1cb9c746172972'],
     }),
     ('GenomeInfoDb', '1.26.2', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['fb38a15c6ed0cf3daef6b7f85ed7f9cd84a682e8182c528d83b2ab9a08fb5124'],
     }),
     ('XVector', '0.30.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['989aeac1929409ec78964f85efed086015fcf83fa394faf859d238f2669414df'],
     }),
     ('GenomicRanges', '1.42.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['9108d8842b7b2bff1a99cc8fd9582534c9521eec1d6245612f43b66b5ef19748'],
     }),
     ('XML', '3.99-0.5', {
@@ -172,7 +172,7 @@ exts_list = [
     }),
     ('Biostrings', '2.58.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['0577271fccd6996202bd724455c882231eab7c9448f40ce20bd9c13a8e8678e5'],
     }),
     ('formatR', '1.7', {
@@ -207,17 +207,17 @@ exts_list = [
     }),
     ('BiocParallel', '1.24.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['55c7f472ab94c614214043b648a438760a1c21ae89dc9984ccec2956378b3ec7'],
     }),
     ('Rhtslib', '1.22.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['44795c065c4aa74107786f200e7d156bbe90d56eee4ed9d10146b56ba5788aa3'],
     }),
     ('Rsamtools', '2.6.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['a4144f71022410410ed57b4f4f711c1b48651beb87590c92e786d1c7e77b1710'],
     }),
     ('matrixStats', '0.57.0', {
@@ -227,12 +227,12 @@ exts_list = [
     }),
     ('MatrixGenerics', '1.2.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['6c7fa4223149656077cd4ce5298f22e5dcc5feb43e533e1acda61514d2e17aa8'],
     }),
     ('Biobase', '2.50.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['a441d8442c6734b6ac7585cd4d040b69eb89282a650083421c95724f1d616f86'],
     }),
     ('lattice', '0.20-41', {
@@ -247,22 +247,22 @@ exts_list = [
     }),
     ('DelayedArray', '0.16.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['6dd0a32d5edce34b6797127064c42c3410725524ca5cb9176c67070561fee5b4'],
     }),
     ('SummarizedExperiment', '1.20.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['fa864028b2231d7aa1027be71407981f69373613d3b83ae9337f5bcd2a69a613'],
     }),
     ('GenomicAlignments', '1.26.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['794180a9b935cd4c01c61c1cc7232d9767daeeffa5a4ae4857da6aa34dbf25e1'],
     }),
     ('rtracklayer', '1.50.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['a8df02d9508b112c8553d6862e8466ffd1fd5783e5ffcc036adfcbdf2eacf18b'],
     }),
     ('RColorBrewer', '1.1-2', {
@@ -352,7 +352,7 @@ exts_list = [
     }),
     ('AnnotationDbi', '1.52.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['993efd2ffca433085d243e28d8f1dde577459cd07a0b2d82cfc89b6e077c1d7f'],
     }),
     ('lifecycle', '0.2.0', {
@@ -497,7 +497,7 @@ exts_list = [
     }),
     ('BiocFileCache', '1.14.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['e197e8f686955b3c80410d5f9be4b73e62b9a5006b6f70555f66983180120364'],
     }),
     ('xml2', '1.3.2', {
@@ -507,12 +507,12 @@ exts_list = [
     }),
     ('biomaRt', '2.46.2', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['34023b77a8f2e6aceb6f059e3f2d53642c55616f1b9879b613e2039fed113183'],
     }),
     ('GenomicFeatures', '1.42.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['1ac49eb97330fb9eaeee7ad194d4ecb376e87829b08d32bc09fc1ace606abe9d'],
     }),
     ('lazyeval', '0.2.2', {
@@ -522,22 +522,22 @@ exts_list = [
     }),
     ('AnnotationFilter', '1.14.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['490f083090c7f024dd011214a046a14eb86f1092337a03751e8965a11405f35a'],
     }),
     ('ProtGenerics', '1.22.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['3fbad9dc747e9bbad41f711e2934fff48bbc3f61fc18abc3761beaf9e0ed307a'],
     }),
     ('ensembldb', '2.14.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['fef2f18fc9c7931f8155315e9aae0e76c2f7d26d90f505d89eeae3cc5e4a3412'],
     }),
     ('BSgenome', '1.58.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['9893e5fe00181c6234fbffce3e9d86647a6ed9ba9a3f0cf7abfa946c72af7bbd'],
     }),
     ('farver', '2.0.3', {
@@ -797,17 +797,17 @@ exts_list = [
     }),
     ('VariantAnnotation', '1.36.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['bcc63970244de88da06a57d87c5a2543cc0281aa5fdb8084a4cfd102b6a180ea'],
     }),
     ('biovizBase', '1.38.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['183a92dde383176cb1cee953fa075c11b57e02b1777667a5c0fd31d7d4a64e82'],
     }),
     ('Gviz', '1.34.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['c11e666e3cc5349d2b878ff76cfdbe4da2552286421560a8e7f38598d377b42e'],
     }),
     ('codetools', '0.2-18', {
@@ -837,17 +837,17 @@ exts_list = [
     }),
     ('oligoClasses', '1.52.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['fea100b75646d7e5b1deab3d49ed4f0a64e87a3676a55a4bab4555fb1880e6a6'],
     }),
     ('preprocessCore', '1.52.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['94da71e954204c6edca9899452488c0a9c5c5771c24faad8de9f29a62fcde7c3'],
     }),
     ('oligo', '1.54.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['631e8adbb8b378ba5a11399cfdd33f5265e6280613441accb0ea447bfb9eee32'],
     }),
     ('pbdRPC', '0.2-1', {
@@ -1197,7 +1197,7 @@ exts_list = [
     }),
     ('annotate', '1.68.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['d4fc1309f27b560a7438e2b8ec60f99aad09a79bad2b625115a398d2432a14e7'],
     }),
     ('aod', '1.3.1', {
@@ -1587,12 +1587,12 @@ exts_list = [
     }),
     ('graph', '1.68.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['c4dfe47143152f5ce758c6db1e59a3154d49c90076fcf476d6236eadae902773'],
     }),
     ('RBGL', '1.66.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['5fe38c3792ffdb46839392e7794eee0c5bfbacd12b0711ff956fac1edff7db04'],
     }),
     ('RUnit', '0.4.32', {
@@ -1602,7 +1602,7 @@ exts_list = [
     }),
     ('biocViews', '1.58.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['843200cde58eafce54b7fa0b82d10c4d3f11be4c32a3dc08fac2d8f3d330c2af'],
     }),
     ('stringdist', '0.9.6.3', {
@@ -1622,32 +1622,32 @@ exts_list = [
     }),
     ('BiocCheck', '1.26.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['2bb24164907dbaa8235c5294fa77e6cb22b14acd06cd9254138348fc9365d6c3'],
     }),
     ('BiocVersion', '3.12.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['330f6ba08f6d1e2972918eca5e239ff02901ab9f80c355086e737de23cd749b2'],
     }),
     ('Rhdf5lib', '1.12.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['48c81620346c1c652d15098d1c90df749a28ca747ade82d2a1e276191fc1d691'],
     }),
     ('rhdf5filters', '1.2.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['58df019a2c8626cc236ebe19d44b830a6c3b5f787ea4090d5b57454a88d676cb'],
     }),
     ('rhdf5', '2.34.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['11d70b8d8284d4b7a6beb4c5b65abd42451e46d04f65dfc82bf265a677c8952a'],
     }),
     ('biomformat', '1.18.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['ecb60b0a0962bbf285f512a713178e541c86798e386e9b5aeb9a9d0eaf02b780'],
     }),
     ('permute', '0.9-5', {
@@ -2102,7 +2102,7 @@ exts_list = [
     }),
     ('BSgenome.Hsapiens.UCSC.hg19', '1.4.3', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['5bfa65d7836449d9b30c356968497cdfaa98be48c4e329e71e8f8a120f3e9d1a'],
     }),
     ('diagis', '0.1.5', {
@@ -2132,7 +2132,7 @@ exts_list = [
     }),
     ('limma', '3.46.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['dff5651fdc8aef4af640290244f73b1f1e6c5b99679fede44a37ce804722bbf7'],
     }),
     ('doRNG', '1.8.2', {
@@ -2142,7 +2142,7 @@ exts_list = [
     }),
     ('bumphunter', '1.32.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['735620c9273c203b46c5e8b0aa7133578bbda23e9efa7767d9cd77378140d441'],
     }),
     ('libcoin', '1.0-7', {
@@ -2432,7 +2432,7 @@ exts_list = [
     }),
     ('CODEX', '1.22.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['7a84b44d0c761ccca7cbccef5afec0d2f0b321ceaf4f9f146d2439d14f3232d7'],
     }),
     ('TH.data', '1.0-10', {
@@ -2617,17 +2617,17 @@ exts_list = [
     }),
     ('sparseMatrixStats', '1.2.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['109786d306e694c8c9ceac8e0d367f875ec380cd25829aaa6af0dfa0da6a3134'],
     }),
     ('HDF5Array', '1.18.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['4838e3e4bfbe122ef5edc660ef78206014490ada0a752b59f009dc01702221c3'],
     }),
     ('DelayedMatrixStats', '1.12.2', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['93c8eb326dba858faa5138248ddc6c81a472fc3ee71b080fb2a3e8ee2f6c920a'],
     }),
     ('dendextend', '1.14.0', {
@@ -2712,17 +2712,17 @@ exts_list = [
     }),
     ('genefilter', '1.72.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['3693641d6eca6c6c3cf54ac17e30c80884a5b753bb6c88cf491ade2d2d1ed0b0'],
     }),
     ('geneplotter', '1.68.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['1d67b3dd6e5520e46f47b53f0f19c9e9eefe2f6c9817e4db0b2fda6081c916b9'],
     }),
     ('DESeq2', '1.30.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['f762340677695ffbba86d80f4c9db41a92d9c82bc4a118cf0db7b2cc3d4b4e60'],
     }),
     ('details', '0.2.1', {
@@ -2842,7 +2842,7 @@ exts_list = [
     }),
     ('DNAcopy', '1.64.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['0c16de79da073c1e1bd6cecceebc53d21051627b748ce497a940211e8953a54e'],
     }),
     ('vcd', '1.4-8', {
@@ -2992,7 +2992,7 @@ exts_list = [
     }),
     ('edgeR', '3.32.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['972d1444d4ee82a106dfd72a1506b61c7051dcef01365f17f0da28e3306251bd'],
     }),
     ('parameters', '0.11.0', {
@@ -3482,7 +3482,7 @@ exts_list = [
     }),
     ('gdsfmt', '1.26.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['163d3e9d501e35f96ba29573317f9cb313060b72f9699136fbea7f5720b2bb38'],
     }),
     ('gee', '4.13-20', {
@@ -3507,7 +3507,7 @@ exts_list = [
     }),
     ('GEOquery', '2.58.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['245e062872a42b4fbf0b38e9c3509afee41edfe21faf8d4efa9313409a7df0cb'],
     }),
     ('geosphere', '1.5-10', {
@@ -3667,7 +3667,7 @@ exts_list = [
     }),
     ('GO.db', '3.12.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['e0316959d3d32096f9432c897413dff74fce53e15ead7917a7724467d971dab9'],
     }),
     ('goftest', '1.2-2', {
@@ -3907,7 +3907,7 @@ exts_list = [
     }),
     ('multtest', '2.46.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['78943ebbdee208f9ce7d49b934ea0f96f245d8b9e3d46958ee76401b50eb711b'],
     }),
     ('scrime', '1.3.5', {
@@ -3917,32 +3917,32 @@ exts_list = [
     }),
     ('siggenes', '1.64.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['fceceb9f1732297f8ce78cbb0ee01966b912e9adc38f5146d806747c4d149123'],
     }),
     ('illuminaio', '0.32.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['5e39146fa22da82a7bb16364bd220739544ebb3a7750b5b8c747cdc2b11315fb'],
     }),
     ('minfi', '1.36.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['d161863b9a83491187951188092184f657227dbaa43e7e7483a450afcdd573f4'],
     }),
     ('IlluminaHumanMethylationEPICanno.ilm10b2.hg19', '0.6.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['4decdbc78a6a8d02bf8aecb0d6e1d81134ae9dbc2375add52574f07829e8cd69'],
     }),
     ('IlluminaHumanMethylationEPICanno.ilm10b4.hg19', '0.6.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['2c8128126b63e7fa805a5f3b02449367dca9c3be3eb5f6300acc718826590719'],
     }),
     ('IlluminaHumanMethylationEPICmanifest', '0.3.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['e39a69d98486cec981e97c56f45bbe47d2ccb5bbb66a1b16fa0685575493902a'],
     }),
     ('import', '1.2.0', {
@@ -4082,12 +4082,12 @@ exts_list = [
     }),
     ('KEGG.db', '3.2.4', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['2e60d1b664cbd1491cc00ed13a22904706c5a4651150f70daca04bf3ba9ead88'],
     }),
     ('KEGGREST', '1.30.1', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['1adc48958746501ffa39742edf9c802e4556d192b555dc51f242d1e47a413f4d'],
     }),
     ('Kendall', '2.2', {
@@ -4337,12 +4337,12 @@ exts_list = [
     }),
     ('SingleCellExperiment', '1.12.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['a26242172a2c10497cc3a0c988e47dc71120bcf31101caeba58cf60eb358ef72'],
     }),
     ('MAST', '1.16.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['b6a6880769ee004f5b30647fe31baa4308eb216b6dc6efc1c75a5512933d1987'],
     }),
     ('mathjaxr', '1.0-1', {
@@ -4972,7 +4972,7 @@ exts_list = [
     }),
     ('polyester', '1.26.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['93432ffb8d2dea79ffc183378a90b4ceeaf318e5a4e18c8eb78e66c6b71e01bd'],
     }),
     ('polysat', '1.7-4', {
@@ -5062,7 +5062,7 @@ exts_list = [
     }),
     ('quantsmooth', '1.56.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['d9817070c31adbafc4f9463efce0b30981ba8e0a7cb6c342d2577986dc2fed93'],
     }),
     ('R2WinBUGS', '2.1-21', {
@@ -5147,7 +5147,7 @@ exts_list = [
     }),
     ('reactome.db', '1.74.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['1fedad892c0a63368904839c6b631af6f5cc3e6db39aa157c9c591191f383716'],
     }),
     ('readODS', '1.7.0', {
@@ -5412,7 +5412,7 @@ exts_list = [
     }),
     ('SeqArray', '1.30.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['e230413b5159384352f9c6596531bae4f46702a1d369f16fdf0967003c56ea40'],
     }),
     ('SPAtest', '3.1.2', {
@@ -5422,7 +5422,7 @@ exts_list = [
     }),
     ('SAIGEgds', '1.4.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['c15b34941b8717112e3f3161a05a214e5d5b747c0b587b38646912c47ff29265'],
     }),
     ('systemfit', '1.1-24', {
@@ -5597,7 +5597,7 @@ exts_list = [
     }),
     ('SNPRelate', '1.24.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['3b6a46fc969573ba6791b5cc7737839883ce1a6099bc3f9d82fc8f61027ad4e7'],
     }),
     ('spam64', '2.6-0', {
@@ -5902,7 +5902,7 @@ exts_list = [
     }),
     ('WES.1KG.WUGSC', '1.22.0', {
         'source_tmpl': '%(name)s_%(version)s.tar.gz',
-        'source_urls': local_bioconductor_options['source_urls']
+        'source_urls': local_bioconductor_options['source_urls'],
         'checksums': ['529c331a5d69bf03822515a398e1c6166ac1d82c7f88d7bc92fb964f59c66cb1'],
     }),
     ('wesanderson', '0.3.6', {
