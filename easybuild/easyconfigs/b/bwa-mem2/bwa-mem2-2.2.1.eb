@@ -17,4 +17,16 @@ source_urls = ['https://github.com/%(name)s/%(name)s/releases/download/v%(versio
 sources = ['%(name)s-%(version)s_x64-linux.tar.bz2']
 checksums = ['b4cfdbce8cc07cdf3f6a920facabc29c976cf77dd53573369508111d6d1c555b']
 
+sanity_check_paths = {
+    'files': ['%s' % x for x in bash_scripts]
+             + ['src/scripts/%s' % x for x in python_scripts]
+             + ['%s' % x for x in not_scripts],
+    'dirs': ['%s' % x for x in ['config', 'data', 'src', 'test']],
+}
+
+sanity_check_paths = {
+    'files': ['bwa-mem2', 'README.md'],
+    'dirs': [],
+}
+
 moduleclass = 'bio'
