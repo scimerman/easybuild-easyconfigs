@@ -24,7 +24,7 @@ builddependencies = []
 #
 builddependencies = [
     ('binutils', '2.30'),
-    ('Autotools', '20150215'),
+    ('Autotools', '20180311'),
 ]
 preconfigopts = 'autoreconf -f -i && chmod a+x configure && '
 
