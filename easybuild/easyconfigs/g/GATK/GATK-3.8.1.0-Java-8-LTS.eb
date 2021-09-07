@@ -14,9 +14,9 @@ high-performance computing features make it capable of taking on projects
 of any size."""
 
 toolchain = {'name': 'dummy', 'version': ''}
-source_urls = ['https://software.broadinstitute.org/gatk/download/']
+source_urls = ['https://storage.googleapis.com/gatk-software/package-archive/gatk/']
 sources = [{
-    'download_filename': 'auth?package=GATK-archive&version=3.8-1-0-gf15c1c3ef',
+    'download_filename': 'GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.tar.bz2',
     'filename': '%(name)s-%(version)s.tar.bz2',
 }]
 checksums = ['a0829534d2d0ca3ebfbd3b524a9b50427ff238e0db400d6e9e479242d98cbe5c']
