@@ -10,7 +10,7 @@ toolchain = {'name': 'foss', 'version': '2018b'}
 
 source_urls = [('http://github.com/molgenis/%s/archive/' % (name))]
 sources = [('%s.tar.gz' % (version))]
-checksums = ['b0d606b4d078a4d984a115d6e2cde91841d1063d9b999a24e4f92ffc7a89db5d']
+checksums = ['346382288ee8d786a9585535d774ab15238699b7f04fb81c2ae463d02f84ef3a']
 
 #
 # set default singularity image folder
