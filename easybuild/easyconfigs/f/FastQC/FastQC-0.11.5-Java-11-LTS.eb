@@ -14,15 +14,14 @@ toolchain = {'name': 'dummy', 'version': ''}
 
 source_urls = ['http://www.bioinformatics.babraham.ac.uk/projects/%(namelower)s']
 sources = ['%(namelower)s_v%(version)s.zip']
-
 checksums = [
-   '3524f101c0ab0bae77c7595983170a76',
-   '2cf189abedd5eae51dabb21cd14dc02f'
+    'dd7a5ad80ceed2588cf6d6ffe35e0f161c0d9977ed08355f5e4d9473282cbd66',  # fastqc_v0.11.5.zip
+    '684701634440864750c9a0b99d81e122a1def78672d436daf5497bff61d9a356',  # FastQC_shebang.patch
 ]
 
 patches = ['FastQC_shebang.patch']
 
-dependencies = [('Java', '1.8.0_74')]
+dependencies = [('Java', '11-LTS', '', True)]
 
 postinstallcmds = ["chmod +x %(installdir)s/fastqc"]
 
