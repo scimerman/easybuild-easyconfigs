@@ -16,8 +16,9 @@ sources = [{
     'source_urls': [('https://github.com/molgenis/capice/archive/%s/' % (version))],
     'filename': ('%s.tar.gz' % (version))},{
     'source_urls': [('https://github.com/molgenis/capice/releases/download/%s/' % (version))],
-    'filename': 'capice2vcf.jar',
-    'extract_cmd': 'cp %s .'}
+    'filename': 'capice2vcf-%(version)s.jar',
+    'download_filename': 'capice2vcf.jar',
+    'extract_cmd': 'cp %s capice2vcf.jar'}
 ]
 
 checksums = [
