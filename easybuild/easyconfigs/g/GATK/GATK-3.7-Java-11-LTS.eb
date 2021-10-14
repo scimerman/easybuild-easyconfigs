@@ -1,7 +1,7 @@
 easyblock = 'Tarball'
 
 name = 'GATK'
-version = '3.8.1.0'
+version = '3.7'
 versionsuffix = '-Java-%(javaver)s-LTS'
 
 homepage = 'http://www.broadinstitute.org/gatk/'
@@ -14,15 +14,15 @@ high-performance computing features make it capable of taking on projects
 of any size."""
 
 toolchain = {'name': 'dummy', 'version': ''}
-source_urls = ['https://software.broadinstitute.org/gatk/download/']
+source_urls = ['https://storage.googleapis.com/gatk-software/package-archive/gatk/']
 sources = [{
-    'download_filename': 'auth?package=GATK-archive&version=3.8-1-0-gf15c1c3ef',
-    'filename': '%(name)s-%(version)s.tar.bz2',
+    'download_filename': 'GenomeAnalysisTK-3.7-0-gcfedb67.tar.bz2',
+    'filename': 'GenomeAnalysisTK-%(version)s.tar.bz2',
 }]
-checksums = ['a0829534d2d0ca3ebfbd3b524a9b50427ff238e0db400d6e9e479242d98cbe5c']
+checksums = ['11c4d69a2fbb0043a88cf5b9a35fac97']
 
 dependencies = [
-    ('Java', '8', '-LTS'),
+    ('Java', '11', '-LTS'),
 ]
 
 sanity_check_paths = {
