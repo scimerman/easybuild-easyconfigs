@@ -22,12 +22,7 @@ dependencies = [
     ('libpng', '1.6.29'),
     ('freetype', '2.8'),
     ('cairo', '1.14.10'),
-    ##('Python', '2.7.16', '-bare', ('GCCcore', '7.3.0')),
-    ###('Python', '2.7.11'),
     ('PythonPlus', '2.7.16', '-v21.08.1', ('foss', '2018b')),
-    #('PythonPlus', '2.7.16', '-v21.08.1', ('foss', '2018b')),
-    #('PythonPlus', '2.7.16', '-v21.08.1'),
-    #('PythonPlus', '2.7.16', '-v21.08.1'),
 ]
 
 binaries = ['futurize', 'multiqc', 'pasteurize']
