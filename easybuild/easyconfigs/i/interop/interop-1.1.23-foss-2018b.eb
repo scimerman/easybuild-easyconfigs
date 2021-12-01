@@ -1,0 +1,22 @@
+easyblock = 'Tarball'
+
+name = 'interop'
+version = '1.1.23'
+
+homepage = 'https://github.com/Illumina/interop'
+description = """The Illumina InterOp libraries are a set of common routines used for
+ reading InterOp metric files produced by Illumina sequencers"""
+
+toolchain = {'name': 'foss', 'version': '2018b'}
+
+sources = ['InterOp-%(version)s-Linux-GNU.tar.gz']
+source_urls = ['https://github.com/Illumina/%(name)s/releases/download/v%(version)s/']
+checksums = ['90c31f865949c22acc38309dd4c7f2f2ee8b97b22fbd7f40861aa79d4b4bdabc']
+
+
+sanity_check_paths = {
+    'files': ['bin/aggregate', 'bin/dumpbin', 'bin/dumptext', 'bin/summary'],
+    'dirs': ['bin/', 'include', 'lib64', 'share'],
+}
+
+moduleclass = 'bio'
