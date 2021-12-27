@@ -1,0 +1,37 @@
+easyblock = 'CMakeMake'
+
+name = 'Metal'
+version = '2020-05-05'
+
+homepage = 'http://csg.sph.umich.edu/abecasis/Metal/'
+description = """Metal - Meta Analysis Helper. The METAL software is designed to facilitate meta-analysis of large
+ datasets (such as several whole genome scans) in a convenient, rapid and memory efficient manner."""
+
+sources = [('%s.tar.gz' % (version))]
+source_urls = ['https://github.com/statgen/METAL/archive/refs/tags/']
+checksums = ['0ffa2419ca2ab43766e7e6e8c97822c8ce1f5b6233fb5f992d1b1be1955fede7']
+
+skipsteps = ['configure']
+
+toolchain = {'name': 'foss', 'version': '2018b'}
+toolchainopts = {'pic': True}
+
+dependencies=[('CMake','3.19.3','',('GCCcore','7.3.0'))]
+
+prebuildopts = 'mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. &&'
+
+buildopts = 'all'
+preinstallopts = 'cd build && '
+
+installopts = 'INSTALLDIR=%(installdir)s/bin'
+
+postinstallcmds = [
+    'mkdir %(installdir)s/bin/ && cp build/bin/metal %(installdir)s/bin/',
+]
+
+sanity_check_paths = {
+    'files': ['bin/metal'],
+    'dirs': [''],
+}
+
+moduleclass = 'bio'
