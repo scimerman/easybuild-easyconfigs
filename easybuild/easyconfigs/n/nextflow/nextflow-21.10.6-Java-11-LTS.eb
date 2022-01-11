@@ -1,0 +1,31 @@
+name = 'nextflow'
+version = '21.10.6'
+versionsuffix = '-Java-%(javaver)s-LTS'
+
+homepage = 'https://github.com/nextflow-io/nextflow/'
+description = """Nextflow is a bioinformatics workflow manager that enables the development of portable and reproducible workflows. It supports deploying workflows on a variety of execution platforms including local, HPC schedulers, AWS Batch, Google Cloud Life Sciences, and Kubernetes. Additionally, it provides support for manage your workflow dependencies through built-in support for Conda, Docker, Singularity, and Modules."""
+
+toolchain = SYSTEM
+easyblock = 'Binary'
+
+source_urls = ['https://github.com/nextflow-io/%(name)s/releases/download/v%(version)s/']
+sources = ['%(name)s-%(version)s-all']
+checksums = ['7dbbe33814f42d38a663917450f4443608482e3dbc5fd1efe86ec3bc43893051']
+
+dependencies = [
+    ('Java', '11', '-LTS')
+]
+
+postinstallcmds = [
+    'chmod +x %(installdir)s/%(name)s-%(version)s-all',
+    'cd %(installdir)s/ && ln -s %(name)s-%(version)s-all %(name)s'
+]
+
+sanity_check_paths = {
+    'files': ['%(name)s-%(version)s-all', '%(name)s'],
+    'dirs': []
+}
+
+modextrapaths = {'PATH': ''}
+
+moduleclass = 'bio'
