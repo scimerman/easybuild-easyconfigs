@@ -36,7 +36,7 @@ dependencies = [
     ('sambamba', '0.7.0', '', ('system', '')),
     ('SAMtools', '1.14'),
     ('HTSlib', '1.14'),
-    ('multiqc', '1.11', '-Python-%s-bare' % (py3ver)),
+    ('multiqc', '1.11', '-Python-%s-bare' % (py3ver),('GCCcore','7.3.0')),
     ('vcfanno', 'v0.3.3', '', ('system', '')),
     ('BWA', '0.7.17'),
     ('CoNVaDING', '1.2.1'),
