@@ -10,7 +10,7 @@ It annotates and predicts the effects of genetic variants (such as amino acid ch
 toolchain = {'name': 'system', 'version': ''}
 
 java = 'Java'
-javaver = '11-LTS'
+javaver = '8-LTS'
 versionsuffix = '-%s-%s' % (java, javaver)
 
 source_urls = [SOURCEFORGE_SOURCE]
