@@ -4,7 +4,7 @@ version = 'v0.3.3'
 homepage = 'https://github.com/brentp/vcfanno'
 description = """annotate a VCF with other VCFs/BEDs/tabixed files"""
 
-toolchain = {'name': 'dummy', 'version': 'dummy'}
+toolchain = {'name': 'system', 'version': ''}
 easyblock = 'Binary'
 
 #
