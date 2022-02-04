@@ -46,8 +46,7 @@ dependencies = [
     ('seqtk', '1.3'),
     ('snpEff', '4.3t', '-Java-%s' % (javaver), ('system', '')),
     ('VCFped','20180527_d1bbdf5','-Python-%s' % (py2ver)),
-    ('multiqc', '1.11', '-Python-%s-bare' % (py3ver)),
-
+    ('multiqc', '1.11'),
     # ToDo: update the modules below.
     #('xhmm', '2016-01-04-cc14e528d909'),
     #('CADD', 'v1.3', '', ('dummy', '')),
