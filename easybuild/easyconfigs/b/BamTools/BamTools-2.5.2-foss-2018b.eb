@@ -8,8 +8,7 @@ description = "BamTools provides both a programmer's API and an end-user's toolk
 
 toolchain = {'name': 'foss', 'version': '2018b'}
 toolchainopts = {'pic': True}
-
-source_urls = ['https://github.com/pezmaster31/%(namelower)s/archive/regs/tags/']
+source_urls = ['https://github.com/pezmaster31/%(namelower)s/archive/refs/tags/']
 sources = ['v%(version)s.tar.gz']
 checksums = ['4d8b84bd07b673d0ed41031348f10ca98dd6fa6a4460f9b9668d6f1d4084dfc8']
 

@@ -18,7 +18,7 @@ toolchain = {'name': 'foss', 'version': '2018b'}
 
 source_urls = ['https://github.com/madler/pigz/archive/']
 sources = ['v%(version)s.tar.gz']
-checksums = ['b4c9e60344a08d5db37ca7ad00a5b2c76ccb9556354b722d56d55ca7e8b1c707']
+checksums = ['d2045087dae5e9482158f1f1c0f21c7d3de6f7cdc7cc5848bdabda544e69aa58']
 
 dependencies = [('zlib', '1.2.11')]
 

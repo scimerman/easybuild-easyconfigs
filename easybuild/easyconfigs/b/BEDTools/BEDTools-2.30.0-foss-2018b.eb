@@ -29,6 +29,7 @@ builddependencies = [
 dependencies = [
     ('zlib', '1.2.11'),
     ('BamTools', '2.5.2'),
+    ('bzip2','1.0.6'),
 ]
 
 files_to_copy = ["bin", "docs", "data", "genomes", "scripts", "test"]
