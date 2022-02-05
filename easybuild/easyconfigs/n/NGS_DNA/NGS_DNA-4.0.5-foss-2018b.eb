@@ -1,7 +1,7 @@
 easyblock = 'Tarball'
 
 name = 'NGS_DNA'
-version = '4.0.4'
+version = '4.0.5'
 namelower = name.lower()
 
 homepage = 'https://github.com/molgenis/NGS_DNA'
@@ -20,7 +20,7 @@ rver = '3.6.1'
 #
 source_urls = [('http://github.com/molgenis/%s/archive/' % (name))]
 sources = [('%s.tar.gz' % (version))]
-checksums = ['53fd9c6c279699351f2c9bd2283e4dc2b7ab37375f614bfb8778019e2b19fa78']
+checksums = ['dfa1743bd5752517ef6e4af6648bb32bde7b00e05f2c3be8ead2a30623bdb298']
 
 #
 # Dependencies.
