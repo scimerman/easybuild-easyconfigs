@@ -61,10 +61,10 @@ sources = [
         'filename': 'InDels.tsv.gz',
         'extract_cmd': 'cp %s %(builddir)s/'
 	},
-#{
-#        'filename': 'whole_genome_SNVs.tsv.gz',
-#        'extract_cmd': 'cp %s %(builddir)s/'
-#	},
+{
+        'filename': 'whole_genome_SNVs.tsv.gz',
+        'extract_cmd': 'cp %s %(builddir)s/'
+	},
 {
         'filename': 'whole_genome_SNVs.tsv.gz.tbi',
         'extract_cmd': 'cp %s %(builddir)s/'
