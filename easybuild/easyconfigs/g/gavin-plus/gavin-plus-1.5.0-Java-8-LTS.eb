@@ -24,9 +24,12 @@ dependencies = [
 ]
 source_urls = [('https://registry.molgenis.org/repository/maven-releases/org/molgenis/%s/%s-RELEASE/' % (name,version))]
 sources = [('%s-%s-RELEASE.jar' % (name,version))]
- 
+
+postinstallcmds = [
+'cd %(installdir)s ; ln -s gavin-plus-%(version)s-RELEASE.jar gavin-plus-RELEASE.jar'
+] 
 sanity_check_paths = {
-    'files': ['gavin-plus-1.5.0-RELEASE.jar'],
+    'files': ['gavin-plus-RELEASE.jar'],
     'dirs': []
 }
 
