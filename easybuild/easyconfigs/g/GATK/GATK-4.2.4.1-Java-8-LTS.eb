@@ -25,6 +25,10 @@ dependencies = [
 
 modextrapaths = {'PATH': ''}
 
+postinstallcmds = [
+'cd %(installdir)s ; ln -s gatk-package-%(version)s-local.jar gatk-package-local.jar'
+]
+
 sanity_check_paths = {
     'files': ['gatk'],
     'dirs': []
