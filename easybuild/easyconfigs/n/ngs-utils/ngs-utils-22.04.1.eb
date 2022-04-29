@@ -1,5 +1,5 @@
 name = 'ngs-utils'
-version = '22.01.1'
+version = '22.04.1'
 
 homepage = 'https://github.com/molgenis/ngs-utils'
 description = """Collection of notes and scripts related to NGS """
@@ -13,7 +13,7 @@ easyblock = 'PackedBinary'
 source_urls = [('http://github.com/molgenis/ngs-utils/archive/%s/' % (version))]
 sources = [('%s.tar.gz' % (version))]
 
-checksums = ['178a84ac39a242dfdb9c6b5f4ba17442855c273f75c0110cc879da55713154ff']
+checksums = ['28ce762225138e72e6bb9dc0cbe97192a2e1800b3032bd62e4e4d3cb409da3e8']
 
 dependencies = [ 
     ('Text-CSV', '1.33', '', ('foss', '2015b')),
